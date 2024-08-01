@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Grading System</title>
+    <style>
+        /* Basic styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Styling for header */
+        h1 {
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            background-color: #3b86ff;;
+            width: 460px;
+            box-sizing: border-box;
+            border-radius: 20px 20px 0px 0px;
+            font-size: 22px; /* Reduced font size */
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        /* Form container styling */
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin-top: -20px; /* Overlap header */
+            z-index: 1; /* Ensure it appears above other content */
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        form button {
+            background-color: #3b86ff;;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #3b86ff;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            form input, form select {
+                font-size: 14px;
+            }
+
+            form button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <div class="form-container">
+        <form action="LoginServlet" method="post">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
