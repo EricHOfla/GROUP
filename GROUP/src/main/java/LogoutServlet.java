@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,8 +11,10 @@ public class LogoutServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        session.invalidate();
-        response.sendRedirect("login.html");
+        HttpSession session = request.getSession(false); // Fetch the current session if it exists, otherwise return null
+        if (session != null) {
+            session.invalidate(); // Invalidate the session if it exists
+        }
+        response.sendRedirect("login.html"); // Redirect to login page
     }
 }
