@@ -7,7 +7,104 @@
       <title>Book Registration</title>
       <link rel="stylesheet" href="style.css">
    
-     
+      <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+         }
+
+         .container-fluid {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+
+         .card {
+            padding: 20px;
+         }
+
+         h2 {
+            background-color: #3b86ff;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+         }
+         .text-center{
+                align-items: center;
+                text-align: center;
+         }
+
+         .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+         }
+
+         .table th, .table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+         }
+
+         .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+         }
+
+         .table-hover tbody tr:hover {
+            background-color: #e9ecef;
+         }
+
+         input[type="text"] {
+            width: 97%;
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            outline: none;
+         }
+
+         input[type="submit"], input[type="reset"] {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+
+         input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+         }
+
+         input[type="submit"]:hover {
+            background-color: #0056b3;
+         }
+
+         input[type="reset"] {
+            background-color: #6c757d;
+            color: #ffffff;
+            margin: 0 80%;
+         }
+
+         input[type="reset"]:hover {
+            background-color: #5a6268;
+         }
+
+         a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+         }
+
+       
+         .atag{
+               margin: -90px 30rem;
+                
+         }
+      </style>
    </head>
    
     <% 
